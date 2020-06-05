@@ -10,6 +10,7 @@ $mysql = mysqli_connect('localhost', 'root', '\\', 'skytech');
 // проверяем соединение
 if ($mysql == false){
   print("Ошибка: Невозможно подключиться к MySQL: " . mysqli_connect_error());
+  exit();
 }
 
 // кодировка
